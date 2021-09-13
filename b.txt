@@ -1,0 +1,11 @@
+practice git commands
+git clone
+git add
+git commit
+git status
+git push
+git pull
+git checkout
+git revert
+git reset
+git rebase
