@@ -13,6 +13,9 @@ git branch
 git branch -d delete the branch
 <<<<<<< HEAD
 github
+gitlab
+git init
+git config
 =======
 In Git, there are two main ways to integrate changes from one branch into another: the merge and the rebase. 
 rebase from master
