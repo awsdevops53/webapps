@@ -9,3 +9,5 @@ git checkout
 git revert
 git reset
 git rebase
+git branch
+git branch -d delete the branch
