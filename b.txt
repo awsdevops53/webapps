@@ -11,5 +11,9 @@ git reset
 git rebase
 git branch
 git branch -d delete the branch
+<<<<<<< HEAD
+github
+=======
 In Git, there are two main ways to integrate changes from one branch into another: the merge and the rebase. 
 rebase from master
+>>>>>>> f5f2cb9752180fd958526d23e72d6a36cc819122
