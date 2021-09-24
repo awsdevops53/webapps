@@ -10,7 +10,6 @@ stages{
   stage("Maven Build"){
     steps{
       sh "mvn clean package"
-      sh "mv /var/lib/jenkins/workspace/sample/target/*.war myweb.war
       
     }  
   }   
