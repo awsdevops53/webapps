@@ -7,7 +7,6 @@ stages{
       git credentialsId: 'ec2-user', url: 'https://github.com/awsdevops53/webapps.git'
     }
   }
-}
   stage("Maven Build"){
     steps{
       sh "mvn clean package"
@@ -26,3 +25,4 @@ stages{
      }
      }
   }
+}
