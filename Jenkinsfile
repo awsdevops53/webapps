@@ -15,7 +15,7 @@ stages{
   }   
   stage("deploy-test"){
     steps{
-      sshagent(['tomcat-test]) {
+      sshagent(['tomcat-test']) {
       sh """
       scp -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/sample/target/*.war myweb.war ec2-user@172.31.19.212:/home/ec2-user/apache-tomcat-9.0.53/webapps
       ssh ec2-user@172.31.19.212 /home/ec2-user/apache-tomcat-9.0.53/bin/shutdown.sh
