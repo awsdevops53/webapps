@@ -4,7 +4,7 @@ pipeline{
 stages{
   stage("Git checkout"){
     steps{
-      git credentialsId: '8cdac168-8725-452a-8c46-10fddf82eb8d', url: 'https://github.com/awsdevops53/webapps.git
+      git credentialsId: 'ec2-user', url: 'https://github.com/awsdevops53/webapps.git'
     }
   }
   stage("Maven Build"){
