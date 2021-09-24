@@ -22,8 +22,12 @@ stages{
       ssh ec2-user@172.31.19.212 /home/ec2-user/apache-tomcat-9.0.53/bin/startup.sh
       
       """
-    }
-    }
-  }
+     }
+      
+     }
+    
+   }
+  
  }
+
 }
