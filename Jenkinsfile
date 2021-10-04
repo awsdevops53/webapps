@@ -17,7 +17,7 @@ stages{
     steps{
       sshagent(['tomcat-test']) {
       sh """
-     sh scp /home/ec2-user/apache-maven-3.8.2/web-project/target/web-project.war ec2-user@18.234.161.177:/home/ec2-user/apache-tomcat-10.0.11/webapps
+     sh scp -rp /home/ec2-user/apache-maven-3.8.2/web-project/target/web-project.war ec2-user@18.234.161.177:/home/ec2-user/apache-tomcat-10.0.11/webapps
      sh ssh ec2-user@18.234.161.177 /home/ec2-user/apache-tomcat-10.0.11/bin/shutdown.sh
      sh ssh ec2-user@18.234.161.177 /home/ec2-user/apache-tomcat-10.0.11/bin/startup.sh
       
